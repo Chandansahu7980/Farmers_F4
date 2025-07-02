@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-shadow: 3px 2px 4px rgb(54, 142, 242);
+  text-align: center;
+  background-size: cover;
+  color: white;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+}
+
+.heading h1 {
+  padding: 1.5em;
+}
+
+.nav {
+  overflow: hidden;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: .3em 1em;
+  background: rgba(0, 0, 0, 0.432);
+}
+
+.nav button {
+  background-color: transparent;
+  padding: 1em;
+  color: white;
+  border: 0;
+  outline: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1em;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  color: rgb(9, 172, 9);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: .3em;
+}
+
+.hide {
+  background: rgba(172, 255, 47, 0.263);
+  height: max-content;
+  padding: 1em;
+  display: none;
+}
+
+#basic {
+  display: block;
+}
+
+.hide > h1 {
+  text-align: center;
+  color: gray;
+  text-shadow: 2px 2px 5px white;
+}
+
+.details-table {
+  margin: auto;
+}
+
+.details-table td {
+  text-transform: capitalize;
+  padding: 1em;
+  border: 1px solid gray;
+}
+
+.each-step {
+  margin-top: 2em;
+}
+
+.each-step > h1 {
+  text-transform: capitalize;
+}
+
+.step-desc {
+  display: flex;
+  padding: 1.5em;
+}
+
+.step-desc .step-img {
+  border-radius: 1em;
+  width: 40%;
+  margin-right: 2em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+  background-position: center;
+}
+
+.step-desc .desc-para {
+  width: 100%;
+  overflow-y: scroll;
+  height: 35vh;
+}
+
+.step-desc .desc-para > p {
+  font-size: 1.2em;
+}
+.step-desc .desc-para>p::first-letter{
+  text-transform: capitalize;
+  font-size: 2em;
+  color: rgb(0, 0, 69);
+}
+
+.desc-para::-webkit-scrollbar {
+  display: none;
+}
+
+
+.goBack{
+  cursor: pointer;
+  border: 0;
+  border-radius: .5em;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background-color: white;
+  padding: .2em;
+  color: red;
+  font-weight: 600;
+  z-index: 5;
+}
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+@media screen and (max-width: 1015px) {
+  .each-step > h1 {
+    text-align: center;
+  }
+  .step-desc {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-desc .step-img {
+    height: 30vh;
+    margin: auto;
+  }
+  .step-desc .desc-para {
+    margin-top: 1em;
+    height: fit-content;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .step-desc .step-img {
+    width: 90%;
+    margin: auto;
+  }
+}

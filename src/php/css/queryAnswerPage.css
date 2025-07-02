@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(69, 59, 246, 0.443);
+  display: flex;
+  justify-content: center;
+}
+
+.ans-form {
+  padding: 2em;
+  margin: 1em;
+  text-align: left;
+  width: 65%;
+}
+.ans-form p {
+  text-transform: capitalize;
+  line-height: 2em;
+}
+
+.ans-form > form {
+  margin: 0.6em auto;
+  /* background-color: aquamarine; */
+  width: 100%;
+}
+
+.ans-form label {
+  line-height: 1.5em;
+}
+.ans-form form select {
+  border: 0;
+}
+
+.ans-form textarea {
+  margin: 0.5em 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-shadow: 0 0 3px rgb(121, 183, 254);
+  font-weight: 500;
+  font-size: large;
+  width: 99%;
+}
+
+.ans-form  button {
+  padding: 1em 2em;
+  background-color: green;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5em;
+}
+.ans-form  #cancel{
+  background-color: red;
+  margin-top: 1em;
+}
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+@media screen and (max-width: 767px) {
+  .container {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("./../../imgs/bg-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.navbar {
+  user-select: none;
+  position: sticky;
+  top: -1.5em;
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.5em;
+  padding-top: 2.5em;
+  background-image: linear-gradient(
+    rgba(89, 171, 239, 0.395),
+    rgba(89, 171, 239, 0.345)
+  );
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  margin: 0.7em;
+  margin-top: 0;
+}
+
+.desk-farmer-login {
+  display: none;
+}
+
+.navbar-logo i {
+  font-size: 160%;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.navbar p {
+  font-size: 160%;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  float: right;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.614);
+}
+
+.navbar-logo .opt-list {
+  margin-top: 2.2em;
+  margin-left: -1em;
+  display: none;
+  position: absolute;
+  list-style: none;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.658),
+    rgba(255, 255, 255, 0.635)
+  );
+  padding: 0.5em;
+  border-radius: 0.7em;
+  border-top-left-radius: 0;
+  /* border-top-right-radius: 0; */
+}
+
+.navbar-logo .opt-list li {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+}
+
+.navbar-logo .opt-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mob-notification {
+  display: none;
+}
+
+.navbar-logo .opt-list li:hover {
+  background-color: white;
+  border-radius: 0.5em;
+}
+
+.navbar-logo .opt-list li form,
+.navbar-logo .opt-list li form button {
+  background: transparent;
+  outline: 0;
+  border: 0;
+}
+
+.login-btn a,
+.notify a {
+  color: white;
+  text-decoration: none;
+  font-size: 110%;
+  padding: 0.2em 1em;
+  border-radius: 0.3em;
+}
+
+.login-btn a:hover,
+.notify a:hover {
+  transform: translateY(-5px);
+  transition: 1s;
+  box-shadow: 0px 2px 10px black;
+}
+
+.weather {
+  padding: 1.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather #cityEnterForm input {
+  border: 0;
+  border-radius: 0.5em;
+  padding: 0.4em 1em;
+  width: 100%;
+  padding-right: 2em;
+  color: white;
+  background: transparent;
+  box-shadow: 2px 1px 5px white;
+}
+.weather input::placeholder {
+  color: rgb(179, 179, 179);
+}
+.weather #cityEnterForm button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  position: relative;
+  color: darkblue;
+  font-weight: 900;
+  left: 15em;
+  top: -1.5em;
+  text-shadow: 0 0 5px rgb(0, 191, 255);
+}
+
+
+.weather p {
+  user-select: none;
+}
+
+.weather .details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  width: 12em;
+}
+
+.weather .weather-icon {
+  width: 7em;
+}
+
+.weather .col img {
+  width: 3.5em;
+  height: 3.5em;
+  margin-bottom: 1em;
+}
+
+/* ####################################################### */
+@media screen and (max-width: 767px) {
+  .navbar {
+    top: 0;
+    justify-content: left;
+    padding: 1em;
+    flex-wrap: wrap;
+    border-radius: 0;
+    margin: 0;
+  }
+  .navbar-logo .opt-list {
+    background-color: rgba(240, 248, 255, 0.642);
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1em;
+  }
+  .desk-farmer-login {
+    display: block;
+  }
+  .login-btn {
+    display: none;
+  }
+  .navbar-logo i,
+  .navbar p {
+    font-size: 1.8em;
+  }
+  .navbar-logo .opt-list li a,
+  .navbar-logo .opt-list li form button {
+    color: brown;
+    text-shadow: 1px 1px lightgray;
+  }
+  .mob-notification {
+    display: block;
+  }
+  .notify {
+    display: none;
+  }
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */

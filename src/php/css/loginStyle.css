@@ -1,0 +1,122 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.447), rgba(0, 96, 0, 0.817));
+}
+.middle-continer {
+  height: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  background-color: rgba(0, 255, 255, 0.511);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 2em;
+}
+
+.login-image {
+  width: 50%;
+  /* height: 80vh; */
+
+  background-image: url("./../../imgs/login-left.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form {
+  width: 50%;
+  margin: auto;
+}
+
+.form>form{
+  padding: 5%;
+}
+
+#resister,
+#login {
+  color: rgb(75, 75, 255);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#resister:hover,
+#login:hover {
+  color: rgb(13, 13, 203);
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"],
+.form select,
+.form button {
+  width: 100%;
+  border: none;
+  padding: 1em;
+  margin: 0.4em auto;
+  border-radius: 0.5em;
+  background-color: aliceblue;
+}
+
+.form button {
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #4caf50;
+  color: white;
+  letter-spacing: 0.2em;
+  text-shadow: 0px 0px 5px black;
+  padding: 1em;
+  text-align: center;
+}
+.form button:hover {
+  background: #45a049;
+}
+
+.register-form {
+  display: none;
+}
+
+.login-form {
+  display: block;
+}
+.cancel-btn {
+  color: rgb(254, 50, 50);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cancel-btn:hover{
+  color: rgb(217, 0, 0);
+}
+
+
+/* ############################################## */
+
+@media screen and (max-width: 1023px) {
+  .middle-continer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .middle-continer {
+    display: block;
+  }
+  
+  .login-image {
+    height: 40vh;
+    width: 100%;
+    border-radius: 2em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

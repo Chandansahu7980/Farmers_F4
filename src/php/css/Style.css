@@ -1,0 +1,144 @@
+.crop-container h1 {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.crop-container > h1 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.crop-container>.crop-search-form{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.crop-container>.crop-search-form>form>select{
+  width: 30%;
+  padding: .4em 1em;
+}
+.crop-container>.crop-search-form>form>button{
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  margin-left: -3.6em;
+}
+.crop-container>.crop-search-form>form>button>i{
+  background-color: green;
+  padding: .3em 1em;
+  color: white;
+}
+
+.category-types {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category-types .category {
+  cursor: pointer;
+  align-items: center;
+  width: 25%;
+  margin: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  background-size: cover;
+  border-radius: 2em;
+  padding: 1.5em;
+  overflow: hidden;
+}
+
+.category h1 {
+  text-transform: capitalize;
+  font-size: 2.5em;
+}
+
+.category p {
+  font-size: larger;
+}
+/* for banner-1 */
+.banner {
+  background-color: #f7e3ce;
+  padding: 40px;
+  text-align: center;
+}
+
+.banner2{
+  background-color: #c9e4ff;
+}
+
+.banner h2 {
+  font-size: 2.3em;
+  margin-bottom: 1em;
+}
+
+.banner ul {
+  list-style: none;
+  text-align: left;
+  margin: 2em;
+  line-height: 2.5em;
+}
+
+.banner li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.list-style-1 {
+  height: 20px;
+  width: 20px;
+}
+
+.supportive-text {
+  font-size: 16px;
+}
+
+.goBack{
+  cursor: pointer;
+  border: 0;
+  border-radius: .5em;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background-color: rgba(144, 238, 144, 0.324);
+  color: red;
+  font-weight: 600;
+  z-index: 5;
+}
+
+
+/* ###################################### */
+
+@media screen and (max-width: 1023px) {
+  .category-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    text-align: center;
+  }
+  .category-types .category {
+    width: 40%;
+    margin: 2em auto;
+  }
+  .crop-container>.crop-search-form>form>select{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .category-types {
+    display: block;
+    text-align: center;
+  }
+  .category-types .category {
+    width: 80%;
+    margin: 2em auto;
+  }
+  .crop-container>.crop-search-form>form>select{
+    width: 70%;
+  }
+}
+
