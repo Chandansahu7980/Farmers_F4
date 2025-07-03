@@ -13,6 +13,7 @@
 - [Project Modules](#project-modules)
 - [Future Enhancements](#future-enhancements)
 - [Contributors](#contributors)
+- [BasicTroubleshutingSteps](#common-troubleshooting-steps)
 - [License](#license)
 
 ---
@@ -27,7 +28,6 @@
 - 📰 News updates and farming insights  
 - 🔒 Secure login system with password recovery  
 - 📈 Admin dashboard for managing users and crops  
-- 🛠️ Session tracking for both experts and farmers  
 
 ---
 
@@ -204,6 +204,44 @@ Follow these steps to set up the project locally on your machine using XAMPP.
 This project is for academic and non-commercial use only. Free for reuse.
 
 ---
+
+### Common Troubleshooting Steps
+
+- **Apache/MySQL Not Starting in XAMPP**
+  - Make sure no other application (like Skype) is using ports 80 or 3306.
+  - Run XAMPP as Administrator.
+  - Check XAMPP Control Panel logs for error messages.
+
+- **phpMyAdmin Not Loading**
+  - Confirm Apache and MySQL services are running.
+  - Access via `http://localhost/phpmyadmin`.
+  - Clear browser cache or try a different browser.
+
+- **Database Import Errors**
+  - Ensure the `.sql` file is not too large (split if needed).
+  - Check for syntax errors or version mismatches in the SQL file.
+  - Make sure the database exists before importing.
+
+- **Database Connection Fails**
+  - Double-check credentials in `db/config.php` (`servername`, `username`, `password`, `dbname`).
+  - Ensure MySQL service is running.
+  - If using a password for MySQL root, update it in `config.php`.
+
+- **Webpage Not Loading**
+  - Confirm project folder is inside `C:\xampp\htdocs\`.
+  - Access the site via `http://localhost/project-f4/src/php/`.
+  - Check for typos in folder or file names.
+  - Review PHP error logs in `C:\xampp\php\logs\php_error_log`.
+
+- **Blank Page or PHP Errors**
+  - Enable error reporting in PHP by adding `error_reporting(E_ALL); ini_set('display_errors', 1);` at the top of your PHP files (for debugging only).
+  - Check for missing PHP extensions (like `mysqli`).
+
+- **Changes Not Reflected**
+  - Clear browser cache or do a hard refresh (`Ctrl+F5`).
+  - Restart Apache after making configuration changes.
+
+> If issues persist, consult XAMPP and PHP documentation or seek help on relevant forums.
 
 ## 🔗 Reference Links
 
