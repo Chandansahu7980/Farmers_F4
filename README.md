@@ -48,6 +48,7 @@ Project-f4/
 │ ├── admin/ # Admin login, dashboard, CRUD operations
 │ ├── expertise/ # Expert login and query handling modules
 │ ├── css/ # Stylesheets (if used)
+│ │
 │ └── ... # Core PHP files like index, crop details, login pages
 ├── imgs/ # Image assets used across the site
 ├── favicon.ico # Website favicon
@@ -68,7 +69,7 @@ Each directory serves a role-based or functional purpose:
 
 ## 🖥️ Screenshots
 
-> Screenshots are included in the `/screenshots` folder or documentation PDF.
+> Screenshots are included in the documentation PDF.
 
 ---
 
@@ -107,7 +108,7 @@ Follow these steps to set up the project locally on your machine using XAMPP.
     ```
 
 - **Step 6: Configure Database Connection**
-  - Open the file:
+  - Open the file in any code editor:
     ```
     /project-f4/db/config.php
     ```
@@ -116,7 +117,7 @@ Follow these steps to set up the project locally on your machine using XAMPP.
     $servername = "localhost";
     $username = "root";
     $password = ""; // leave empty for XAMPP default
-    $dbname = "farming_db"; // must match your phpMyAdmin DB name
+    $dbname = "farming_db"; // must match your **phpMyAdmin DB name**
     ```
 
 - **Step 7: Test Database Connection**
@@ -135,7 +136,7 @@ Follow these steps to set up the project locally on your machine using XAMPP.
 - **Step 8: Access the Website**
   - In your browser, go to:
     ```
-    http://localhost/project-f4/
+    http://localhost/project-f4/src/php/
     ```
   - The homepage or login screen should load.
 
@@ -145,7 +146,7 @@ Follow these steps to set up the project locally on your machine using XAMPP.
     - **Password**: `969696`
   - 🔐 To change these credentials, go to:
     ```
-    /project-f4/admin/admin-login.php
+    /project-f4/src/php/admin/admin-login.php
     ```
     - Locate and update the hardcoded username and password securely.
 
