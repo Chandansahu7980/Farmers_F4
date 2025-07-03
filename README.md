@@ -2,6 +2,14 @@
 
 **PROJECT-F4** is a user-friendly web application aimed at helping farmers with agricultural guidance, crop management, expert consultations, and access to government schemes. Built using **PHP** and **MySQL**, this project was developed on B.Sc. ITM final-year of **Ravenshaw University** as part of my academic project submission.
 
+> **What does F4 mean?**  
+> **F4** stands for four key phrases that capture the spirit of this project:
+> - **Farming For Future, For Farmers** – Empowering farmers with modern guidance for a sustainable tomorrow.
+>
+> In this project, **F4** means **"Farming For Future, For Farmers"**—reflecting our mission to guide, inform, and support farmers with the latest government notices and expert advice for a better future.
+
+> **Project Submission Date:** May 2023
+
 ---
 
 ## 📋 Table of Contents
