@@ -213,7 +213,7 @@ This project is for academic and non-commercial use only. Free for reuse.
 
 ---
 
-### Common Troubleshooting Steps
+## 🛠️ Common Troubleshooting Steps
 
 - **Apache/MySQL Not Starting in XAMPP**
   - Make sure no other application (like Skype) is using ports 80 or 3306.
